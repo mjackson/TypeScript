@@ -15967,10 +15967,18 @@ interface URLSearchParams {
      */
     has(name: string): boolean;
     /**
+     * Returns an array of all parameter names.
+     */
+    keys(): string[];
+    /**
      * Sets the value associated to a given search parameter to the given value. If there were several values, delete the others.
      */
     set(name: string, value: string): void;
     sort(): void;
+    /**
+     * Returns an array of all parameter values.
+     */
+    values(): string[];
     /**
      * Returns a string containing a query string suitable for use in a URL. Does not include the question mark.
      */
